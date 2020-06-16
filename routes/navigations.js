@@ -25,7 +25,7 @@ function MyStack() {
 
 function MyDriver() {
     return (
-        <Drawer.Navigator initialRouteName='This Day'>
+        <Drawer.Navigator drawerContent={props => <DrawerContent {...props} />}>
         <Drawer.Screen name="View Profile" component={viewProfileScreen} />
         <Drawer.Screen name="Calender" component={calenderScreen} />
         <Drawer.Screen name="This Day" component={MyStack} />
