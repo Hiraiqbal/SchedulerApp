@@ -1,16 +1,8 @@
 import React from 'react';
-import { Button, View , StyleSheet,Image} from 'react-native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import {  View , StyleSheet} from 'react-native';
 import {
-    Avatar,
-    Title,
-    Caption,
-    Paragraph,
     Drawer,
     Text,
-    TouchableRipple,
-    Switch,
-    shadow
 } from 'react-native-paper';
 import {
     DrawerContentScrollView,

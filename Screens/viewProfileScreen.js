@@ -1,26 +1,30 @@
 import React from 'react';
-import { Button, View,StyleSheet } from 'react-native';
+import { Button, View,StyleSheet,Text } from 'react-native';
+
 
 function viewProfileScreen({ navigation }) {
     return (
-
-      <View style={styles.Button}>
-        <Button
+      <View style={{flex:1}}>
+        <View style={styles.mainContent}>
+        </View>
+        <View style={styles.Button}>
+          <Button
           onPress={() => navigation.navigate('This Day')}
           title="Go to This Day"
-        />
+         />   
+       </View>
       </View>
     );
   }
   const styles=StyleSheet.create({
-    drawerContent:{
-        flex:1,
+    mainContent:{
+
         borderWidth:70,
         borderColor:'#499394'
         
     },
     Button:{
-        flex: 1,
+        flex:1,
         alignItems: 'center',
         justifyContent: 'center' ,
     },
